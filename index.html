@@ -2,15 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>ALARM CLOCK</title>
+    <title> CLOCK</title>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
     <div class="container">
-      <h3>Well look at the time! </h3>
-      <h3 id="time"></h3>      
+      <div class="jumbotron text-center">
+        <h1> CLOCK </h1>
+      </div>
+      <h1 id="time" class="text-center"></h1>
+      <h3 id="alarmTime"></h3>
+      <div class="row">
+        <div class="col-md-4">
+          <form>
+            <h4> Set an alarm </h4>
+            <input class="form-control" type="time" name="time">
+            <br>
+            <button type="submit" class="btn btn-default"> Set </button>
+          </form>
+        </div>
+      </div>
+      <button id="disable" class="btn btn-danger">Disable </button>
     </div>
   </body>
 </html>
